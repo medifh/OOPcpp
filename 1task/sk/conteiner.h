@@ -48,7 +48,7 @@ public:
 			 m_quanity --;
 		 }
 	 }
-	 void DelHead( ) // delete first element
+	 void DelHead( ) // удаление первого
 	 {
 		 if (m_head != NULL)
 		 {
@@ -58,7 +58,7 @@ public:
 			 m_quanity --;
 		 }
 	 }
-	 T GetHead( ) // get value of first element
+	 T GetHead( ) // получить значение первого
 	 {
 		 if (m_head != NULL)
 		 {
@@ -66,14 +66,14 @@ public:
 		 } 
 
 	 }
-	 T GetTail( ) // get value of last element
+	 T GetTail( ) // получить значение последнего
 	 {
 		 if (m_tail != NULL)
 		 {
 			 return m_tail -> m_value;
 		 } 
 	 }
-	 T GetElement(int numb) // get element with number "numb" 
+	 T GetElement(int numb) // получить элемент номера numb (перебор)
 	 {
 		 int i = 0;
 		 Element* current = m_tail;
@@ -84,7 +84,7 @@ public:
 		 } 
 		 return current;
 	 }
-	 void PutHead(T newval) // add first element
+	 void PutHead(T newval) // добавить первый элемент
 	 {
 		 Element * newhead = new Element;
 		 newhead -> m_next = NULL;
@@ -94,7 +94,7 @@ public:
 		 if ( m_tail == NULL ) m_tail = m_head;
 		 m_quanity ++;
 	 }
-	 void PutTail( T newval ) // Add last element
+	 void PutTail( T newval ) // добавить последний элемент
 	 {
 		 Element * newtail = new Element;
 		 newtail -> m_next = m_tail;
@@ -104,7 +104,7 @@ public:
 		  if ( m_head == NULL ) m_head = m_tail;
 		 m_quanity ++;
 	 }
-	 bool IsEmpty( ) //checking of empty
+	 bool IsEmpty( ) //проверить на пустоту
 	 {
 		 return ( m_head == NULL ); 
 	 }
@@ -122,7 +122,7 @@ public:
 		m_tail = NULL;
 		m_quanity = 0;
 	 }
-	 int GetQuanity( ) // get count of elements
+	 int GetQuanity( ) // получить количество элементов
 	 {
 		 return m_quanity;
 	 }
