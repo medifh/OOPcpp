@@ -11,12 +11,12 @@ void main()
 	a.PutHead( 5 );
 	a.PutTail( 2 );
 	std::cout << a.IsEmpty( ) << "\n" << a.GetTail( ) << "\n" << a.GetHead() << "\n" << a.GetQuanity();
-	//проверка на пустоту, получить последний элемент, получить первый, получить количество элементов
+	//Check for empty, get the last element, get the first, get the number of elements
 	a.DelHead( );
 	a.DelTail( );
 	std::cout << "\n----\n" << a.IsEmpty() << "\n" << a.GetTail( ) << "\n" << a.GetHead() << "\n"<< a.GetQuanity( );
 	a.Clearn( );
 	std::cout << "\n=" << a.IsEmpty( );
-	//отчистка и проверка на пустоту
+	//Cleaning and checking for empty
 	system( "pause" );
 }
